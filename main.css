@@ -1,0 +1,40 @@
+html {
+    background-color: #2F343F;
+}
+
+#grid {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-tile {
+    padding: 0.5vh 0.35vw;    
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.tile-container-h {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.tile-container-v {
+    display: flex;
+    flex-direction: row;
+
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.tile-container-h > img.grid-tile {
+    height: 0;
+    max-width: 100%
+}
+
+.tile-container-v > img.grid-tile {
+    width: 0;
+    max-height: 100%;
+}
