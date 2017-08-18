@@ -8,33 +8,31 @@ html {
 }
 
 .grid-tile {
-    padding: 0.5vh 0.35vw;    
+    display: flex;
+
     flex-grow: 1;
-    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-.tile-container-h {
+.grid-column {
+    flex-grow: 1;
+    
+
     display: flex;
     flex-direction: column;
-
-    flex-grow: 1;
     flex-wrap: wrap;
 }
 
-.tile-container-v {
+.grid-row {
+    flex-grow: 1;
+
     display: flex;
-    flex-direction: row;
-
-    flex-grow: 1;
     flex-wrap: wrap;
 }
 
-.tile-container-h > img.grid-tile {
-    height: 0;
-    max-width: 100%
-}
-
-.tile-container-v > img.grid-tile {
+.grid-tile > img {
+    flex-basis: 0;
+    flex-grow: 1;
     width: 0;
     max-height: 100%;
 }
